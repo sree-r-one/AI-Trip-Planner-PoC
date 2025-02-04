@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import {
   GoogleGenerativeAI,
-  HarmCategory,
-  HarmBlockThreshold,
+  // HarmCategory,
+  // HarmBlockThreshold,
 } from "@google/generative-ai";
 
 interface UserInput {
