@@ -1,10 +1,15 @@
-import { Button } from "./components/ui/button";
+import React from "react";
+import { Routes, Route } from "react-router";
+import { Home, About } from "./pages";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className="flex bg-red-200 p-3">
-      App
-      <Button>Click me</Button>
+    <div className="">
+      Dashboard
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
 };
